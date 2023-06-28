@@ -104,7 +104,7 @@ The job can begin in a demo org to short the development time.
       </LightningComponentBundle>
    ```
 
-   2. Apex VerifiContactUtil for support the frontend
+2. Apex VerifiContactUtil for support the frontend
   
    ```
          public with sharing class VerifiContactUtil {
