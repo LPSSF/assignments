@@ -146,8 +146,8 @@ The job can begin in a demo org to short the development time.
    ```
 
 ### References:
-How  LWC be a screen of FLOW
+1. How  LWC be a screen of FLOW
 Configure a Component for Flow Screens https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.use_config_for_flow_screens
-Lightning Design System
+2. Lightning Design System
 https://www.lightningdesignsystem.com/
 
