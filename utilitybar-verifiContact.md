@@ -14,3 +14,40 @@ The job can begin in a demo org to short the development time.
 
 1. LWC Components
 1.1 VerifiContact.js
+   ```
+import { LightningElement, api } from 'lwc';
+import verifyContact from '@salesforce/apex/VerifiContactUtil.verifyContact';
+import verifyCode from '@salesforce/apex/VerifiContactUtil.verifyCode';
+import sendCode from '@salesforce/apex/VerifiContactUtil.sendCode';
+
+
+export default class VerifiContact extends LightningElement {
+    @api contactId = '';
+    @api caseId = '';
+    
+    @api contactFirstName = '';  
+    @api contactLastName = '';  
+    @api verifyResult = false;  // Output to flow
+
+    verifyValue = '';
+
+    get verifyOptions() {
+        return [
+            { label: 'Mobile', value: 'mobile' },
+            { label: 'Email', value: 'email' },
+        ];
+    }
+
+    error;
+    // step 1, with given name and contact approach, verify the contact
+    handleVerifyContact() { 
+    }
+    // step 2, send the verification code to the contact
+    handleSendCode() { 
+    }
+    // step 3, verify the code
+    handleVerifyCode() {
+    }
+}
+   
+   ```
